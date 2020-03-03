@@ -12,12 +12,10 @@ def convert(file):
 				if len(tmp_poly) > 0:
 					polys.append(tmp_poly)
 				tmp_poly = []
-				print(line)
 			elif ll == "poly":
 				ll = "meta"
 			elif ll == "meta":
 				point = line.split(" ")
-				print(point)
 				if len(point) == 2:
 					point = [float(point[0]),float(point[1])]
 					tmp_poly.append(point)
